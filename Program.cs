@@ -13,6 +13,7 @@ namespace RegexUserRegistration
             Console.WriteLine("Use case #3: Email");
             Console.WriteLine("Use case #4: Phone Numbers");
             Console.WriteLine("Use case #5: Password Rule One: minimum 8 characters");
+            Console.WriteLine("Use case #6: Password Rule Two: atleast 1 upper case character");
 
             Console.Write("Please select a program to run from options above: ");
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -66,6 +67,17 @@ namespace RegexUserRegistration
                 case 5:
                     string passwordOneValidate = "qwerty123";
                     if (PasswordRuleOne.validateString(passwordOneValidate))
+                    {
+                        Console.WriteLine("Valid");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid");
+                    }
+                    break;
+                case 6:
+                    string passwordTwoValidate = "qweRty123";
+                    if (PasswordRuleTwo.validateString(passwordTwoValidate))
                     {
                         Console.WriteLine("Valid");
                     }
