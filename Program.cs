@@ -110,6 +110,17 @@ namespace RegexUserRegistration
                         Console.WriteLine("Invalid");
                     }
                     break;
+                case 9:
+                    string emailSampleValidate = "abc+100@gmail.com";
+                    if (EmailSample.validateString(emailSampleValidate))
+                    {
+                        Console.WriteLine("Valid");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid");
+                    }
+                    break;
                 default:
                     Console.WriteLine("Please enter a valid number from given options");
                     break;
